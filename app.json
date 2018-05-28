@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/personalCenter/personalCenter",
+    "pages/post/post",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "同济失物招领平台",
+    "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": 1000,
+    "downloadFile": 1000
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#1C86EE",
+    "backgroundColor": "#FAFAFA",
+    "borderStyle": "#000",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "pages/image/home.png",
+        "selectedIconPath": "pages/image/home.png"
+      },
+      {
+        "pagePath": "pages/post/post",
+        "text": "发帖",
+        "iconPath": "pages/image/editSelected.png",
+        "selectedIconPath": "pages/image/editSelected.png"
+      },
+      {
+        "pagePath": "pages/personalCenter/personalCenter",
+        "text": "我",
+        "iconPath": "pages/image/Personal.png",
+        "selectedIconPath": "pages/image/Personal.png"
+      }
+    ]
+  }
+}

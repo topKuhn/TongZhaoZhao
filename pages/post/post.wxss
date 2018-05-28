@@ -1,0 +1,69 @@
+.titleAnddescription{
+  display: flex;
+  height: 250rpx;
+  flex-direction: column;
+}
+.titleView{
+  flex-grow: 1;
+  border-bottom: 2rpx solid lightgray;
+  height: 50rpx;
+}
+.descriptionView{
+  flex-grow: 3;
+  border-bottom: 5rpx solid gainsboro;
+}
+.gap{
+  height: 20rpx;
+  background-color: gainsboro;
+  opacity: 0.5;
+}
+.uploadImage .image{
+  width:120rpx;
+  height:120rpx;
+}
+.infos{
+  display: flex;
+  flex-direction: column;
+  height:360rpx;
+}
+.postType,.postLocation,.postItemType,.postPhone{
+  border-bottom: 2rpx solid gainsboro;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.typeInfoText,.locationInfoText,.itemTypeInfoText,.phoneInfoText{
+  align-items: center;
+  font-size: 0.8em;
+  color: lightgray;
+  flex-grow: 1;
+  margin-left:20rpx; 
+}
+.typeRadio{ 
+  transform: scale(.6)
+}
+.choosePos,.chooseItemType{
+  font-size: 0.8em;
+  margin-right: 20rpx;
+}
+.send{
+  margin-top: 10rpx;
+  height:50rpx;
+  background-color: lightpink;
+
+}
+/*
+.postLocation{
+  border-bottom: 2rpx solid gainsboro;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+.locationInfoText{
+  align-items: center;
+  font-size: 0.8em;
+  color: lightgray;
+  flex-grow: 1;
+}
+*/

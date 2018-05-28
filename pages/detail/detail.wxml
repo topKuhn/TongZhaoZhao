@@ -1,0 +1,24 @@
+<view class="textInfo">
+  <view class='titleAndDate'>
+    <view class="titleText">{{info.title}}</view>
+    <view class='dateText'><text class="dateText">{{info.date}}</text></view>
+  </view>
+  <view class='typeAndPosition'>
+    <view class="typeText">{{info.type}}</view>
+    <view class="positionText"><text class="positionText">{{info.position}}</text></view>
+  </view>
+  <view class='description'>{{info.description}}</view>
+</view>
+<view class='gap'></view>
+<view class='image'>
+  <image src='{{info.imagePath}}'></image>
+</view>
+<view class='gap'></view>
+<view class='number'>
+  <view class="imagePhoneAndNumber">
+    <image src='../image/phone.jpg' class='imagePhone'></image><text class='phoneText'>{{info.phoneNumber}}</text>
+  </view>
+  <view class='call'>一键拨号</view>
+</view>
+<view class='collectAndshare'>
+</view>

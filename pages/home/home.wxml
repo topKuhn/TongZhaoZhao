@@ -1,0 +1,126 @@
+<view class='topNavigation'>
+  <text class='findLostProperty {{selectedStyleFindLostProperty}}' bindtap='toFindLostPropertyPage'>寻找失物</text>
+  <text class='gap'>|</text>
+  <text class='findOwner {{selectedStyleFindLostOwner}}' bindtap='toFindLostOwnerPage'>寻找失主</text>
+</view>
+<view class="positionAndSearch">
+  <view class='textView'>
+    <text class="position" bindtap='choosePosition'>{{choosePosShow}}</text>
+  </view>
+  <view class='inputView'>
+    <input type='text' calss="inputArea" placeholder='请输入关键字' confirm-type='search' bindinput='searchResult'></input>
+  </view>
+  <view class='searchIconView'>
+    <icon type='search' class='searchIcon' size='20'></icon>
+  </view>
+</view>
+<view class='items'>
+  
+</view>
+
+<scroll-view class='postList' scroll-y="true">
+  <view class='listItem' wx:for="{{itemsArray}}" wx:for-index="key" wx:for-item="value" >
+    <view class='imageShow'>
+      <image class='itemImage' src='{{value.imagePath}}'></image>
+    </view>
+    <view class='infoShow' bindtap='showDetail' id='{{key}}'>
+      <view class='titleAndtype'>
+        <text class='titleText'>{{value.title}}</text>
+        <text class='typeText'>{{value.type}}</text>
+      </view>
+      <view class='distanceAndviewTimes'>
+        <text class='distanceText'>{{distance}}</text>
+        <text class='viewTimesText'>{{viewTimes}}</text>
+      </view>
+      <view class='positionAnddate'>
+        <text class='positionText'>{{value.position}}</text>
+        <text class='dateText'>{{value.date}}</text>
+      </view>
+    </view>
+  </view>
+ 
+</scroll-view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--index.wxml-->
+<!-- 
+<view class="container">
+
+<view bindlongtap='addData'>长按添加数据</view>
+
+<view>  
+  <button bindtap="onChangeShowState">{{showView?'点击隐藏':'点击显示'}}</button>  
+</view>  
+<view class="{{showView?'display':'hide'}}">  
+  <canvas canvas-id="pieCanvas1" style="width:200px;height:200px;"></canvas>  
+</view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view>{{hello}}</view>
+
+  <button bindtap='clickme'>选择图片</button> 
+  <view>
+    name:{{query.name}} 
+    age:{{query.time}}
+  </view>
+  <view>
+    width:{{imageWidth}}
+    height:{{imageHeight}}
+  </view>
+  <image src="{{tempFilePaths }}" mode="aspecFill" style="width: 100%; height: 450rpx" bindtap='imageInfo'/> 
+  <view bindtap='choosePos'><text >位置</text>{{pos}}</view>
+
+  <view class='container'>
+    <block wx:for-items="{{carInfoData}}">
+      <view class='card  b-shadow' bindtap='toggleBtn' id="{{item.id}}">
+        <view class='nearCard-fl'>
+          <image src='{{item.imgurl}}'></image>
+        </view>
+        <view class='nearCard-fr'>
+          <view>日期：
+            <text class='c-green'>{{item.useDate}}</text>
+          </view>
+          <view>车型：
+            <text class='c-green'>{{item.cx}}</text>
+          </view>
+          <view>时长：
+            <text class='c-green'>{{item.time}}</text>
+          </view>
+          <view>费用：
+            <text class='c-green'>{{item.feiyong}}</text>
+          </view>
+        </view>
+        <view class='down clearfix {{uhide==item.id?"show":"hidden"}}'>
+          <view class='ml30'>启用时间：2018.01.01 11:33</view>
+          <view class='ml30'>结束时间：2018.01.01 11:33</view>
+          <view class='ml30'>租赁地区：舟山市桃花岛景区海湾浪琴</view>
+          <view class='feedBack'>意见反馈</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+-->
+   
+   

@@ -1,0 +1,133 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:20rpx; 
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.gap{
+  margin-top: 30rpx;
+  height: 20rpx;
+  background-color: gainsboro;
+  opacity: 0.3;
+}
+.abouts{
+  display: flex;
+  flex-direction: column;
+  height: 320rpx;
+  text-align: left;
+  margin-left: 10rpx;
+}
+.myPost,.myCollection,.myShare,.aboutTongZZ{
+  color:#aaa;
+  flex-grow: 1;
+  border-bottom: 2rpx solid gainsboro;
+  margin-top: 20rpx;
+}
+/*
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.scroll-container {
+  border: solid 1px;
+  height: 800rpx; 
+}
+.scroll-container .scroll-item {
+  height: 300rpx;
+  width: 120%;
+ }
+ 
+ .act{
+   padding: 10px;
+ }
+
+ .banner{
+   height:400rpx;
+   background-color:#ddd;
+ }
+
+.bg-blue {
+   background-color:#87CEFA;
+ }
+ .bg-red {
+   background-color:#FF6347;
+ }
+ .bg-green{
+  background-color:#43CD80; 
+ }
+ .section{
+   font-size: 12px;
+   padding: 10px;
+ }
+ .section.icon-wrapper{
+   height: 100px;
+   font-size:12px;   
+ }
+ .section .list{
+   display: flex;
+   flex-wrap: wrap;
+ }
+ .section .list .item{
+   width: 300rpx;
+   padding: 5px 0 ;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+ }
+ .section.size .list .item{
+   width:100rpx;
+   padding: 0;
+ }
+ .section .list .item label{
+   text-align: center;
+ }
+ .section .list .item .icon{
+   text-align: center;
+ }
+ .video video{
+   width: 100%;
+   height:562.5rpx;
+ }
+ .video .action{
+  padding: 20rpx;
+ }
+ .video .action .danmu{
+   margin-top: 10px;  
+   position: relative;
+   padding-right: 210rpx;
+   height:80rpx;
+ }
+ .video .action .danmu input {
+   border:solid 1px #ccc ;
+   height:80rpx;
+   padding: 0 10rpx;
+   border-radius: 3px;
+ }
+ .video .action .danmu button{
+   width:200rpx;
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   height: 80rpx;
+ }
+ */

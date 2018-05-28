@@ -1,0 +1,165 @@
+.findLostProperty,.findOwner,.gap{
+  color:lightgray;
+  margin-left: 120rpx;
+}
+.gap{
+  color: lightblue;
+}
+.selectedStyleLostProperty{
+  color:lightblue;
+}
+.selectedStyleFindLostOwner{
+  color:lightblue;
+}
+.position{
+  color: lightblue;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin:40rpx;
+  -o-text-overflow:ellipsis;
+}
+.positionAndSearch{
+  margin-top: 30rpx;
+  height: 80rpx;
+  /*background-color: gainsboro;*/
+  background: rgba(105,105,65, 0.05);
+  font-size: 0.8em;
+  display: flex;
+}
+.positionText{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -o-text-overflow:ellipsis;
+}
+.textView{
+  flex-grow: 3;
+  width: 200rpx;
+  padding-top: 20rpx;
+}
+.inputView{
+  flex-grow: 4;
+  padding-top: 12rpx;
+  
+}
+.inputArea{
+  border-radius: 5px;
+  border:1px solid red;
+
+}
+.searchIconView{
+  flex-grow: 1;
+  padding-top: 12rpx;
+}
+
+.postList{
+  height: 900rpx;
+  width: 100%;
+}
+.listItem{
+  display: flex;
+  height: 130rpx;
+  flex-direction: row;
+  border-bottom: 3rpx solid gainsboro;
+  padding-top: 3px ;
+  padding-bottom: 3rpx;
+}
+.imageShow{
+  flex-grow: 1;
+  height: auto;
+  width:100rpx;
+}
+.itemImage{
+  height: 120rpx;
+  width: 150rpx;
+}
+.infoShow{
+  flex-grow: 6;
+  display: flex;
+  flex-direction: column;
+  width:200rpx;
+}
+.titleAndtype,.distanceAndviewTimes,.positionAnddate{
+  flex-grow: 1;
+}
+.titleText{
+  font-size: 0.8em;
+}
+.typeText{
+  font-size: 0.8em;
+  color: lightblue;
+}
+.distanceText,.viewTimesText,.positionText,.dateText{
+  font-size: 0.8em;
+  color:gainsboro;
+}
+.typeText,.dateText,.viewTimesText{
+  float: right;
+}
+.titleText,.distanceText,.positionText{
+  float: left;
+}
+
+
+/*
+.display{
+  display: block; 
+  background-color: blue; 
+  border-radius: 50%
+}
+.hide{  
+ display: none;  
+}  
+.show{  
+ display: block; 
+}  
+.hidden{
+  display: none;
+}
+
+.nearCard-fl {
+  width: 40%;
+  float: left;
+}
+
+.nearCard-fl image {
+  width: 200rpx;
+  height: 200rpx;
+  padding: 8% 15%;
+}
+
+.nearCard-fr {
+  font-size: 27rpx;
+  line-height: 50rpx;
+  width: 60%;
+  margin-left: 40%;
+  margin-top: 15rpx;
+  color: #999;
+}
+
+.nearCard-fr text {
+  font-size: 22rpx;
+}
+
+.down {
+  background-color: #efefef;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20rpx;
+}
+
+.down view {
+  font-size: 26rpx;
+  color: #999;
+  line-height: 50rpx;
+}
+
+.feedBack {
+  text-align: center;
+  background-color: #eecfbd;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10rpx;
+  padding: 5rpx 0;
+  margin: 10rpx 0 0 0;
+}
+*/

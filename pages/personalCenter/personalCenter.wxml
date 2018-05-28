@@ -1,0 +1,155 @@
+<view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo"
+    bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}"
+      background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+</view>
+<view class='gap'></view>
+
+<view class='abouts'>
+  <view class="myPost">我的帖子</view>
+  <view class="myCollection">我的收藏</view>
+  <view class="myShare">我的分享</view>
+  <view class="aboutTongZZ">关于同找找</view>
+</view>
+
+<!--
+
+<view class="container log-list">
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view>
+
+<swiper class="banner" indicator-dots='true' autoplay='{{autoplay}}' current='0' interval='2000' duration='300' bindchange='change' >
+  <block wx:for="{{sliderList}}">
+  <swiper-item> 
+  em.className em.name
+  </swiper-item>
+  </block>
+</swiper>
+<view>
+  <button bindtap="play">暂停/播放</button>
+</view>
+
+<view style="display:flex;height:400rpx">
+  <view style='background-color:red;width:250rpx;color:#fff;'>1</view>
+  <view style='flex-grow:1;display:flex;flex-direction:column;'>
+    <view style='background-color:blue;flex-grow:1;color:#fff'>2</view>
+    <view style='background-color:yellow;flex-grow:1;color:#fff'>3</view>
+  </view>
+
+</view>
+
+<view style='display:flex;flex-direction:column;height:400rpx'>
+  <view style='display:flex;flex-grow:1;'>
+    <view style='background-color:green;flex-grow:1;color:#000;'>a</view>
+    <view style='background-color:pink;flex-grow:1;color:#000;'>b</view>
+  </view>
+  <view style='background-color:gray;flex-grow:1;color:#000;'>c</view>
+</view>
+
+<view style='display:flex;'>
+  <view style='background-color:purple;color:#eee;flex-grow:1;'>α</view>
+  <view style='background-color:aqua;flex-grow:2;color:#eee;'>β</view>
+  <view style='background-color:chocolate;flex-grow:1;color:#eee'>γ</view>
+</view>
+
+
+<scroll-view class='scroll-container' upper-threshold="0" lower-threshold="100" scroll-into-view="{{toView}}" bindscroll="scroll" bindscrolltolower="scrollToLower" bindscrolltoupper="scrollToUpper" scroll-y="true" scroll-x="true" scroll-top="{{scrollTop}}">
+  <view id="item-1" class='scroll-item bg-red'>1</view>
+  <view id="item-2" class='scroll-item bg-blue'>2</view>
+  <view id="item-3" class='scroll-item bg-red'>3</view>
+  <view id="item-4" class='scroll-item bg-blue'>4</view>
+  <view id="item-5" class='scroll-item bg-red'>5</view>
+  <view id="item-6" class='scroll-item bg-blue'>6</view>
+</scroll-view>
+<view class='act'>
+  <button bindtap='scrollToTop'>点击滚动到顶部</button>
+</view>
+ 
+<view calss="sectionsize">
+  <view class='title'>图标大小展示</view>
+  <view class='list'>
+    <block wx:for="{{sizeList}}">
+        <icon type='success' size='{{item}}' color='green' ></icon>
+    </block>
+  </view>
+</view>
+
+<view class='section'>
+  <view class="title">图标类型展示</view>
+  <view class='list'>
+    <block wx:for="{{typeList}}">
+      <view class='item'>
+        <icon type='{{item}}' size='10' ></icon>
+      </view>
+    </block>
+  </view>
+</view>
+
+<view class='section'>
+  <view class='title'>图标颜色展示</view>
+    <view class='list'>
+      <block wx:for="{{colorList}}">
+        <view class='item'>
+          <icon type='info' size='10' color='{{item}}'></icon>
+        </view>
+      </block>
+    </view>
+</view>
+
+<progress percent='{{currentPercent}}' show-info='true' stroke-width='20' color='#CD5555' active></progress>
+
+<radio-group bindchange="changeChoosed">
+  <view wx:for="{{radios}}">
+    <radio value='{{item.value}}' checked='item.checked'>{{item.text}}</radio>
+  </view>
+</radio-group>
+
+<switch type='switch' checked='false' name='switch1'></switch>
+
+
+<view class='section icon-wrapper'>
+  <icon type='success' size='{{icon.size}}' style='opacity:{{icon.opacity/10}};'>
+  </icon>
+</view>
+
+<view class='section'>
+  <view>调整图标大小:</view>
+  <slider show-value='true' max='100' min='10' step='5' value='{{icon.size}}' bindchange='changeSize'></slider>
+</view>
+
+<view class='section'>
+  <view>调整透明度:</view>
+  <slider show-value max='10' min='0' step='1' value='{{icon.opacity}}' selected-color='red' bindchange='changeOpacity'> </slider>
+</view>
+<form bindreset='reset'>
+  <button plain='tue' loading form-type='reset' size='mini'>Click</button>
+</form>
+
+<navigator url='../index/index?name=weixinapp&time=2018'> 跳转到首页index</navigator>
+<navigator url='../index/index?name=weixinapp&time=2018' hover-class='myhover'>重定向到其他页面</navigator>
+<navigator url='../logs/logs?name=weixinapp&time=2018' hover-class='myhover'>刷新当前页面</navigator>
+<view>
+  <input placeholder='内容中123会被自动替换为0' bindinput='changeValue' type='number' maxlength='20'></input>
+</view>
+
+
+<view class='video'>
+  <video id='myVideo' src='{{src}}' danmu-list='{{danmu}}' enable-danmu='true' controls='true'></video>
+  <view class='action'>
+    <button bindtap='getVideo'>获取视频</button>
+    <view class='danmu'>
+      <input type='text' value='{{danmuText}}'  bindblur='sendInputValue' />
+      <button bindtap='sendDanmu'>发送弹幕</button>
+    </view>
+  </view>
+</view>
+<canvas canvas-id='myCanvas' style='width:100%;height:300px;'></canvas>
+
+<contact-button session-from='yoursession' style='margin:100rpx;'></contact-button>
+-->

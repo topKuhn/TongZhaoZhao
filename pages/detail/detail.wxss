@@ -1,0 +1,95 @@
+.textInfo{
+  margin-top: 50rpx;
+  display: flex;
+  height: 240rpx;
+  flex-direction: column;
+  border-bottom: 3rpx solid gainsboro;
+}
+.titleAndDate{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  border-bottom: 3rpx solid gainsboro;
+}
+.titleText{
+  flex-grow: 1;
+  float: left;
+}
+.dateText{
+  flex-grow: 1;
+  color:lightblue;
+  font-size: 0.8em;
+  float: right;
+  
+}
+.typeAndPosition{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  border-bottom: 3rpx solid gainsboro;
+}
+.description{
+  flex-grow: 1;
+  height:100rpx;
+}
+.typeText{
+  flex-grow: 1;
+  float: left;
+}
+.positionText{
+  flex-grow: 1;
+  color:lightblue;
+  font-size: 0.8em;
+  float: right;
+}
+
+.imagePhone{
+  width:100rpx;
+  height:80rpx;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 25rpx;
+}
+.image{
+  align-items: center;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.number{
+  display: flex;
+  flex-direction: row;
+  height:120rpx;
+  margin-bottom: 40rpx;
+  align-items: center
+}
+.imagePhoneAndNumber{
+  flex-grow: 4;
+  display: flex;
+  flex-direction: row;
+  height:120rpx;
+  float: left;
+}
+.call{
+  flex-grow: 1;
+  float: right;
+  color: snow;
+  background-color: turquoise;
+  border-radius: 4rem;
+}
+.phoneText{
+  margin-top: 40rpx;
+}
+.gap{
+  height: 20rpx;
+  background-color: gainsboro;
+  opacity: 0.5;
+}
+
+.collectAndshare{
+  position: fixed;
+  bottom: 0;
+  height: 120rpx;
+  background-color: gainsboro;
+  opacity: 0.5;
+  width:100%;
+}

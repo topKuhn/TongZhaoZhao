@@ -1,0 +1,49 @@
+<view class='titleAnddescription'>
+  <view class='titleView'>
+    <input type='text' name="title" bindinput='inputTitle' value="{{title}}" placeholder='请输入标题' placeholder-style='color:lightgray;font-size:0.8em;margin-left:20rpx;'></input>
+  </view>
+  <view class='descriptionView'>
+    <input type='text' name="description" value="{{description}}" bindinput='inputDescription' placeholder='详细描述...' placeholder-style='color:lightgray;font-size:0.8em;margin-left:20rpx;'></input>
+  </view>
+</view>
+<view class='gap'>
+</view>
+<view class='uploadImage'>
+  <image src='{{imagePath}}' class='image' bindtap='choosePhoto'></image>
+</view>
+<view class='gap'>
+</view>
+
+<view class='infos'>
+  <view class='postType'>
+    <view class='typeInfoText'>类型</view>
+    <view class='twoTypes'>
+    <radio-group bindchange="typeChanged">
+      <radio class='typeRadio' value='寻找失物'>寻找失物</radio>
+      <radio class='typeRadio'value="寻找失主" >寻找失主</radio>
+    </radio-group>
+    </view>
+  </view>
+  
+  <view class='postLocation'>
+    <view class='locationInfoText'>位置</view>
+    <view class='choosePos' bindtap='choosePostPos'>{{postPos}}</view>
+  </view>
+
+  <view class='postItemType'>
+    <view class='itemTypeInfoText'>物品分类</view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="chooseItemType">
+        {{postItemType}}
+      </view>
+    </picker>
+  </view>
+  <view class='postPhone'>
+    <view class='phoneInfoText'>联系电话</view>
+    <input type='number' bindinput='inputTel' style='text-align:right' value="{{phoneNumber}}" placeholder='请输入...' placeholder-style='color:lightgray;font-size:0.8em;'></input>
+  </view>
+</view>
+
+<view class='send'>
+  <button type='primary' size='default'  bindtap='send'>发帖</button>
+</view>
